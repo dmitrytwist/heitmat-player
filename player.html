@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Player</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<video id="vid-player" width="400">
+    <source src="media/video/pencil.mp4" type="video/mp4">
+</video>
+<br>
+<progress max="100" value="0" id="progress-bar"></progress>
+<div>
+    <button id="play">Play</button>
+    <button id="pause">Pause</button>
+    <button id="stop">Stop</button>
+    &nbsp;
+    <button id="speed-down">Slowly</button>
+    <button id="speed-normal">1x</button>
+    <button id="speed-up">Fastly</button>
+    <span id="curtime">0:00:00.000</span>
+</div>
+<div>
+    <button id="time-range-minus">-10 sec</button>
+    <button id="time-range-plus">+10 sec</button>
+    <input type="range" id="volume" min="0" max="100">Громкость</input>
+</div>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>
